@@ -1,0 +1,378 @@
+/* =========================
+   Global Styles
+========================= */
+:root {
+  max-width: 100vw;
+  --bg-primary: #0b0b0d;
+  --bg-secondary: rgba(255, 255, 255, 0.04);
+  --bg-glass: rgba(255, 255, 255, 0.06);
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1a6;
+  --accent: #2997ff;
+  --border: rgba(255, 255, 255, 0.08);
+}
+a {
+  color: bisque;
+}
+body {
+  max-width: 100vw;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI",
+    Roboto, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  background-image: url("L_Background.png");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* backdrop-filter: blur(10px); */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* =========================
+     Navigation Bar
+  ========================= */
+.navbar {
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(15, 15, 18, 0.7);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--text-primary);
+}
+
+/* =========================
+     Apple-like Rounded Cards (G2 curve feel)
+  ========================= */
+.card {
+  background: var(--bg-glass);
+  border-radius: 28px; /* smooth Apple curve */
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(41, 151, 255, 0.2);
+}
+
+/* =========================
+     Floating Solid Box
+  ========================= */
+.floating-box {
+  background: #111114;
+  border-radius: 24px;
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.floating-box:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 1), 0 10px 30px rgba(41, 151, 255, 0.2);
+}
+
+/* =========================
+     Buttons
+  ========================= */
+.button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #1d7fe2;
+  transform: translateY(-2px);
+}
+
+/* =========================
+     Layout Helpers
+  ========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+     Subtle Glow Accent
+  ========================= */
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(41, 151, 255, 0.3),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.glow:hover::before {
+  opacity: 1;
+}
+
+.card-full {
+  background: var(--bg-glass);
+  border-radius: 28px;
+  padding: 2rem;
+  margin: 0 2rem;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(30px);
+
+  max-height: 100vh;
+  overflow-y: auto;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-full:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(41, 151, 255, 0.2);
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.about-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* TEXT */
+.about-name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  color: #aaa;
+  max-width: 500px;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 22px;
+}
+p {
+  font-size: 20px;
+}
+
+.connect-card {
+  backdrop-filter: blur(60px);
+  margin-top: 10px;
+  display: flexbox;
+  width: 100%; /* Adapts to your fixed-width parent */
+  max-width: 400px;
+  background: rgba(15, 15, 18, 0.4); /* Very subtle overlay */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.connect-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+/* Grid Layout */
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 12px;
+}
+
+/* Individual Link Items */
+.connect-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Make the first item (Email) span full width for emphasis */
+.connect-item:first-child {
+  grid-column: span 2;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+/* Hover States */
+.connect-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.contactIcon {
+  border-radius: 10px;
+  width: 50px;
+  height: 40px;
+}
+.contactIconX {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+.LinkImage {
+  display: grid;
+  justify-content: right;
+  justify-self: right;
+  justify-items: right;
+}
+
+.NotFoundimage {
+  height: 50vh;
+  width: 50vw;
+}
+
+.parent {
+  display: flex; /* Aligns cards in a row */
+  flex-wrap: wrap;
+  gap: 5vw; /* Allows cards to wrap to a new line on mobile */
+  margin-left: 10vw;
+  margin-right: 10vw; /* The space between your cards */
+  padding: 20px;
+  justify-content: center; /* Keeps them aligned to the left */
+}
+.frame {
+  margin-top: 10px;
+  display: flexbox;
+  width: 42vw;
+  max-width: fit-content;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.frameadv {
+  margin-top: 10px;
+  display: flexbox;
+  width: 30vw;
+  max-width: 40vw;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.IMLcertificate {
+  border-radius: 6%;
+  height: 35vh;
+  width: 30vw;
+}
+.SPA {
+  border-radius: 6%;
+  height: 65vh;
+  width: 60vw;
+}

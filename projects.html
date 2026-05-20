@@ -12,8 +12,9 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="nav-logo"><img class="logo" src="R.png" /></div>
-
+      <a href=""
+        ><div class="nav-logo"><img class="logo" src="R.png" /></div
+      ></a>
       <div class="nav-links" id="navLinks">
         <a href="index.html">About</a>
         <a href="certificates.html">Certificates</a>
@@ -31,25 +32,68 @@
       <div class="frameadv">
         <center><h1>Vibe Coded</h1></center>
         <h2>Barcode Blaster</h2>
-        <h4>
-          This is a augmented Reality game in which player has to scan barcodes
-          of other players to earn points just like a battle royale game.<br />
-          Made in : React Native
-        </h4>
+
+        <button class="projectInfoButton" onclick="showItem()">Info</button>
+        <button
+          class="visitButton"
+          onclick="document.location='https://replit.com/@ruchirkale011/Barcode-Blaster '"
+        >
+          Visit
+        </button>
+        <div id="infoElement" style="display: none">
+          <h4>
+            This is a augmented Reality game in which player has to scan
+            barcodes of other players to earn points just like a battle royale
+            game.<br />
+            Made in : React Native
+          </h4>
+        </div>
         <center>
-          <a href="https://replit.com/@ruchirkale011/Barcode-Blaster">
-            <img src="barcodeBlaster.png" />
-          </a>
+          <img src="barcodeBlaster.png" style="border-radius: 10%" />
         </center>
       </div>
-      <a href="https://www.kaggle.com/ruchirkale">
-        <div class="frameadv">
-          <h1>Kaggle Projects</h1>
-          <h4>Made in : Python</h4>
-          <img src="kaggle.png" /></div
-      ></a>
+
+      <div class="frameadv">
+        <h1>Kaggle Projects</h1>
+        <h4>Made in : Python</h4>
+        <button
+          class="visitButton"
+          onclick="document.location='https://www.kaggle.com/ruchirkale'"
+        >
+          Visit
+        </button>
+        <br />
+        <img src="kaggle.png" style="border-radius: 20%" />
+      </div>
+      <div class="frameadv">
+        <center><h1>Vibe Coded</h1></center>
+        <h2>StartInvest</h2>
+
+        <button class="projectInfoButton" onclick="showItem_2()">Info</button>
+        <button
+          class="visitButton"
+          onclick="document.location='https://replit.com/@ruchirkale011/Startup-Connect-Hub?v=1 '"
+        >
+          Visit
+        </button>
+        <div id="infoElement2" style="display: none">
+          <h3>
+            •This is a platform for Startups and Investors to find each other
+            with great deals <br /><br />
+            •This platform has powerful AI to find correct Startup/Inestor
+            match.<br /><br />
+            •This platform provides a secure and fast connection
+
+            <br /><br />
+            Note: This was a 24 hr hackathon project
+          </h3>
+        </div>
+        <center>
+          <img src="SNI.JPG" style="border-radius: 10%; width: 300px" />
+        </center>
+      </div>
     </div>
 
-    <script src="" async defer></script>
+    <script src="index.js" async defer></script>
   </body>
 </html>

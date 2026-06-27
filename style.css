@@ -20,7 +20,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI",
     Roboto, sans-serif;
   /* background: var(--bg-primary); */
-  background-image: url("semiFluid.jpg");
+  background-image: url("fluid2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: var(--text-primary);

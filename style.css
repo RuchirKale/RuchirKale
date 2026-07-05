@@ -260,6 +260,7 @@ h4 {
 }
 p {
   font-size: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 .connect-card {

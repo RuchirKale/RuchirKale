@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
   margin: 2rem;
   border: 1px solid var(--border);
   /* backdrop-filter: blur(40px); */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), */
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   backdrop-filter: blur(12px) url(#liquid-refraction);
@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
 
 .card:hover {
   transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 1), 0 0 20px rgba(41, 151, 255, 0.2);
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 1), 0 0 20px rgba(41, 151, 255, 0.2); */
 }
 
 /* =========================
@@ -96,14 +96,14 @@ body::-webkit-scrollbar {
   padding: 1rem;
   margin: 2rem;
   border: 1px solid var(--border);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4); */
   transform: translateY(0);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .floating-box:hover {
   transform: translateY(-12px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 1), 0 10px 30px rgba(41, 151, 255, 0.2);
+  /* box-shadow: 0 30px 80px rgba(0, 0, 0, 1), 0 10px 30px rgba(41, 151, 255, 0.2); */
 }
 
 /* =========================
@@ -181,11 +181,11 @@ body::-webkit-scrollbar {
   /* backdrop-filter: blur(30px); */
   backdrop-filter: blur(22px) url(#liquid-refraction);
   -webkit-backdrop-filter: blur(22px) url(#liquid-refraction);
-  box-shadow: 0px 20px 38px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 20px 38px rgba(0, 0, 0, 0.15); */
   /* max-height: 100vh; */
   overflow-y: auto;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), */
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -260,7 +260,7 @@ h4 {
 }
 p {
   font-size: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .connect-card {
@@ -462,7 +462,7 @@ p {
   overflow-y: hidden;
   overflow-x: hidden;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), */
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   box-shadow: 0px 20px 38px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -477,11 +477,11 @@ p {
   align-items: center;
   height: 150px;
   width: 100px;
-  box-shadow: 0px 20px 38px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 20px 38px rgba(0, 0, 0, 0.15); */
   overflow-y: hidden;
   overflow-x: hidden;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), */
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
   transition: transform 0.4s ease, box-shadow 0.4s ease;

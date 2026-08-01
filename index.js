@@ -40,3 +40,28 @@ function addStructuredData() {
 }
 
 addStructuredData();
+
+console.log(`
+██████╗ ██╗  ██╗
+██╔══██╗██║ ██╔╝
+██████╔╝█████╔╝
+██╔══██╗██╔═██╗
+██║  ██║██║  ██╗
+╚═╝  ╚═╝╚═╝  ╚═╝
+
+__Developer Detected__
+
+You have entered the source code.
+_________________________________
+For your please note that this is a personal website and the source code 
+is open for educational purposes only. Any unauthorized use of the code for
+ commercial purposes is strictly prohibited.  
+
+Do not copy or use this code without permission. 
+If you have any questions or inquiries, please contact me.
+
+Copying is a crime don't be one to commit it.
+
+Love you,
+Have a great day!
+`);

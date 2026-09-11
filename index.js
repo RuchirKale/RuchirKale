@@ -65,3 +65,14 @@ Copying is a crime don't be one to commit it.
 Love you,
 Have a great day!
 `);
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ruchir Kale",
+  "url": "https://ruchirkale.github.io/RuchirKale/",
+  "sameAs": [
+    "https://x.com/RuchirKale",
+    "https://github.com/RuchirKale"
+  ]
+};
